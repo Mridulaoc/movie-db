@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.movies{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 2rem;
+  
+}
+.movie{
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img{
+  height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.movie-info{
+  position: absolute;
+   
+    width: 100%;
+    color: white;
+    bottom: 3.25rem;
+    left: 0;
+    padding: .5rem 1rem;
+    
+}
+
+.movie-info h3{
+  font-size: 1rem;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.movie-info p{
+  font-size:.75rem;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.movie:hover .movie-info{  
+  background: #000000fc;
+  transition: all 2s ease;
+}
+
+.movie:hover h3, .movie:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.search-form{
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.search-form h2{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.search-form input{
+  width: 40%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #80808059;
+    border-radius: 4px;
+}
+
+.error-msg{
+  color: red;
+  background-color: rgb(232, 193, 193);
+  padding: .25rem;
+  border-radius: 4px;
+  width: auto;
+  margin-top: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.movie-container{
+  width: 80%;
+  margin: 4rem auto;
+  display: flex;
+}
+  
+  .movie-container img{
+   height: 40rem;
+  }
+
+  .single-movie-info{
+    padding: 2rem 0 0 3rem ;
+  }
+
+  .single-movie-info p{
+    line-height: 2;
+  }
+
+  .btn{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(1, 1, 39);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+  }
+    
